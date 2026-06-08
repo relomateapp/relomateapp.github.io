@@ -9,7 +9,7 @@ checklist assistant.
 - `index.html` - static landing page
 - `styles.css` - responsive page styling
 - `script.js` - mobile navigation and footer year
-- `assets/relo-mate-team-slide.png` - team slide exported from the project PDF
+- `assets/` - individual team member portraits used in the team section
 
 ## Preview Locally
 
