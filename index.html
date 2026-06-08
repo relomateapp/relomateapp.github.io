@@ -13,7 +13,11 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="RELO-MATE home">
-        <span class="brand-mark">RM</span>
+        <span class="brand-mark" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
         <span>RELO-MATE</span>
       </a>
       <button
@@ -29,31 +33,75 @@
         <span></span>
       </button>
       <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#product">Product</a>
-        <a href="#journeys">Journeys</a>
-        <a href="#team">Team</a>
-        <a href="#project">Project</a>
+        <a href="#product">View sample result</a>
+        <a class="nav-cta" href="https://relo-mate.vercel.app/">
+          Start demo <span aria-hidden="true">&nearr;</span>
+        </a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">National Taipei University project</p>
-          <h1 id="hero-title">RELO-MATE</h1>
-          <p class="hero-copy">
-            A source-grounded relocation checklist assistant that helps
-            students turn scattered visa and relocation requirements into a
-            clear plan they can act on.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="https://relo-mate.vercel.app/">
-              Open the app
-            </a>
-            <a class="button button-secondary" href="#team">Meet the team</a>
+        <div class="hero-shell">
+          <div class="hero-content">
+            <p class="hero-pill">Built for confident moves</p>
+            <h1 id="hero-title">Your move, mapped with clarity.</h1>
+            <p class="hero-copy">
+              Turn confusing relocation and visa requirements into a simple,
+              source-based checklist.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="https://relo-mate.vercel.app/">
+                Start Demo <span aria-hidden="true">&rarr;</span>
+              </a>
+              <span class="assurance">No account required</span>
+            </div>
+            <ul class="hero-proof" aria-label="Product highlights">
+              <li>Cross-border ready</li>
+              <li>Source notes included</li>
+              <li>Timeline at a glance</li>
+            </ul>
           </div>
+
+          <article class="plan-card" aria-label="Sample relocation checklist">
+            <div class="plan-card-header">
+              <div>
+                <p class="plan-kicker">Your relocation plan</p>
+                <h2>Indonesia &rarr; Taiwan</h2>
+              </div>
+              <span class="plan-type">Study</span>
+            </div>
+
+            <div class="progress-block" aria-label="Application progress">
+              <div class="progress-label">
+                <span>Application progress</span>
+                <strong>50%</strong>
+              </div>
+              <div class="progress-track">
+                <span></span>
+              </div>
+            </div>
+
+            <ul class="checklist" aria-label="Checklist preview">
+              <li class="is-complete">Confirm university admission</li>
+              <li class="is-complete">Prepare authenticated documents</li>
+              <li>Submit resident visa application</li>
+              <li>Apply for ARC after arrival</li>
+            </ul>
+
+            <div class="plan-stats">
+              <div>
+                <span class="stat-icon document-icon" aria-hidden="true"></span>
+                <strong>8</strong>
+                <span>Required documents</span>
+              </div>
+              <div>
+                <span class="stat-icon clock-icon" aria-hidden="true"></span>
+                <strong>6-10</strong>
+                <span>Weeks estimated</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
